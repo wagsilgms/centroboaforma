@@ -1,0 +1,245 @@
+/* Height 100% */
+html, body {
+	height: 100%;
+}
+.bloco {
+	min-height: 100%;
+	padding-top: 94px;
+}
+.row {
+	margin-bottom: 0;
+}
+/* Home */
+.home {
+	animation: mudarbg 15s infinite;
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.banner h2 {
+	font-size: 2.5rem;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.banner p {
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
+
+/* Home Animation */
+@keyframes mudarbg {
+	40% { 
+		background-image: url('../img/bg2.jpg'); 
+	}
+	80% { 
+		background-image: url('../img/bg3.jpg'); 
+	}
+	100% { 
+		background-image: url('../img/bg.jpg'); 
+	}
+}
+
+/* Título e Parágrafo */
+.titulo {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.titulo::after {
+	content: '';
+	display: block;
+	width: 100px;
+	border-top: 1px solid #2dc7d0;
+	margin: 15px auto;
+}
+.paragrafo {
+	line-height: 1.8rem;
+}
+
+/* Sobre */
+.sobre {
+	background-image: url('../img/textura1.png');
+}
+.sobre .missao-visao-valores {
+	padding: 40px 0;
+	margin-top: 35px;
+}
+.sobre .missao-visao-valores .icon {
+	color: #FFF;
+}
+.sobre .missao-visao-valores h3 {
+	font-size: 1.5rem;
+	color: #FFF;
+	text-transform: uppercase;
+}
+.sobre .missao-visao-valores p {
+	color: #FFF;
+	text-align: center;
+}
+
+/* Serviços */
+.servicos {
+	background-color: #000;
+}
+.servicos .btn-horario {
+	padding-bottom: 20px;
+}
+
+/* Unidades */
+.unidades {
+	background-image: url('../img/bg-unidades.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.unidades article p {
+	line-height: 1.8rem;
+}
+
+/* Contato */
+.contato {
+	background-color: #999;
+}
+.contato h4 {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.contato .mapa {
+	min-height: 560px;
+}
+.contato .mapa iframe {
+	width: 100%;
+	min-height: 560px;
+}
+.contato .informacoes {
+	background-image: url('../img/textura2.png');
+	width: 100%;
+	min-height: 560px;
+	padding: 30px;
+}
+.contato .formulario {
+	width: 100%;
+	min-height: 560px;
+	padding: 30px;
+}
+
+/* Depoimentos */
+.depoimentos .titulo::after {
+	border-color: #FFF;
+}
+.depoimentos img {
+	margin-top: 20px;
+	width: 200px;
+}
+.depoimentos p {
+	margin: 60px 0;
+}
+.depoimentos h4 {
+	font-size: 1.2rem;
+	font-weight: 900;
+}
+
+/* Rodape */
+.rodape {
+	background-image: url('../img/bg-rodape.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px 0;
+}
+
+/* Menu */
+.navbar {
+	background-color: transparent;
+	transition: background 0.5s linear;
+}
+.navbar ul a:hover {
+	background-color: transparent;
+	color: #2dc7d0;
+}
+.nav-color {
+	background-color: rgba(0,0,0,0.7);
+	transition: background 0.5s linear;
+}
+
+/* Colors */
+.blue-logo {
+	background-color: #2dc7d0;
+}
+
+/* Logo */
+.logo_text {
+	font-size: 0;
+	margin: 0;
+}
+.logo_img {
+	width: 100px;
+	margin-top: 15px;
+}
+nav ul li {
+	float: left;
+}
+nav.nav-extended .nav-wrapper {
+  min-height: 94px;
+}
+.navbar-fixed {
+  position: absolute;
+  height: 94px;
+}
+nav, nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons, nav a.button-collapse i {
+  height: 94px;
+  line-height: 94px;
+}
+.side-nav {
+	background: url('../img/textura2.png');
+}
+.side-nav li a {
+	color: rgba(255,255,255,0.5);
+}
+.side-nav li a:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+.tabs {
+	background-color: #222;
+}
+.tabs .tab a {
+	color: #FFF;
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+	color: #2dc7d0;
+}
+.tabs .indicator {
+	background-color: #2dc7d0;
+}
+
+	/* Media Queries */
+	@media only screen and (max-width: 480px) {
+		.card-image-horizontal {
+			display: none;
+		} 
+	}
+
+	@media only screen and (min-width: 601px) {
+	  .banner {
+	  	padding-top: 4.5rem;
+	  }
+	  .banner h2 {
+	  	font-size: 4rem;
+	  }
+	  .container {
+	  	width: 85%;
+	  }
+	}
+
+	@media only screen and (min-width: 993px) {
+	  .banner {
+	  	padding-top: 5rem;
+	  }
+	  .banner h2 {
+	  	font-size: 5rem;
+	  }
+	  .container {
+	  	width: 90%;
+	  }
+	}
